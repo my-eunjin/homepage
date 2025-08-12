@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Asta+Sans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body {overflow-x: hidden; width: 100vw; height: 100%;}
+/* home */
+button {margin: 0; padding: 0; background: transparent; border: 0;}
+#mainSect {display: flex; justify-content: center; align-items: center; width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 9999; overflow: hidden;}
+#mainBtn {width: 248px; height: 248px; position: relative; overflow: visible;}
+#mainBtn>img {width: 100%; height: 100%; position: relative; z-index: 1;}
+.bgEffect {position: absolute; z-index: 0; left: 50%; top: 50%; transform: translate(-50%, -50%); border-radius: 50%; width: 240px; height: 240px; background: #ff9d9c; animation: hide 1.0s ease-in-out forwards;}
+@keyframes hide {
+    0% {transform: translate(-50%, -50%) scale(1);}
+    100% {transform: translate(-50%, -50%) scale(50);}
+}
+
+/* header */
+.navbar {width: 100%;}
+.navbar-brand {margin-left: 1rem;}
+
+/* main */
+.mainBg {width: 100%; height: 100vh; object-fit: cover;}
+.carousel, .carousel-inner, .carousel-item {width: 100vw; height: calc(100vh - 91.88px);}
+.carousel-control-next, .carousel-control-prev {width: 5% !important;}
+.carousel-caption {font-family: "Asta Sans";}
+
+/* section2 */
+.fontChange {width: 100%; font-family: "Asta Sans";}
+#h2 {font-family: "Nunito Sans"; letter-spacing: 0.7rem;  text-align: center;}
+.card-img {width: 100%; height: 100%; object-fit: cover; aspect-ratio: 1/0.66; object-position: top; overflow: hidden;}
+.card-link {text-decoration: none;}
+.card-title, .card-title.h5, .card-text, .card-header {letter-spacing: 0;}
+.card-title.h5 {font-size: 1.2rem; margin-top: 0.5rem; margin-bottom: 0.5rem;}
+
+/* section4 */
+.form-check-input:checked {background-color: #727272; border-color: #727272;}
+#content .row {justify-content: center;}
+#content .gender {height: 48px;}
